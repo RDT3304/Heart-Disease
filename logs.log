@@ -27676,3 +27676,1208 @@ AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
 2023-08-17 14:15:56,113:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
 2023-08-17 14:15:56,427:INFO:Visual Rendered Successfully
 2023-08-17 14:15:56,590:INFO:plot_model() successfully completed......................................
+2023-08-17 14:17:06,290:INFO:Initializing plot_model()
+2023-08-17 14:17:06,290:INFO:plot_model(plot=threshold, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:17:06,290:INFO:Checking exceptions
+2023-08-17 14:17:06,300:INFO:Preloading libraries
+2023-08-17 14:17:06,305:INFO:Copying training dataset
+2023-08-17 14:17:06,305:INFO:Plot type: threshold
+2023-08-17 14:17:06,643:INFO:Fitting Model
+2023-08-17 14:17:09,131:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:09,132:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:09,132:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:11,903:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:11,903:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:11,903:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:14,546:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:14,546:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:14,546:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:17,407:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:17,407:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:17,407:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:19,935:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:19,935:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:19,935:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:22,528:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:22,528:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:22,528:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:25,141:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:25,142:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:25,142:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:27,246:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:27,246:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:27,246:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:29,292:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:29,292:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:29,293:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:31,222:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:31,224:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:31,224:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:33,300:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:33,300:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:33,300:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:35,486:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:35,486:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:35,486:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:37,624:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:37,624:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:37,624:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:39,841:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:39,841:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:39,841:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:41,153:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:41,153:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:41,153:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:42,357:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:42,357:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:42,357:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:43,624:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:43,624:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:43,624:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:45,003:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:45,003:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:45,003:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:46,254:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:46,254:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:46,254:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:47,553:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:47,553:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:47,553:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:48,822:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:48,822:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:48,822:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:50,135:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:50,135:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:50,135:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:51,322:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:51,322:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:51,322:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:52,511:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:52,511:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:52,511:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:54,032:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:54,032:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:54,032:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:55,281:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:55,281:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:55,281:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:56,484:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:56,484:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:56,484:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:57,724:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:57,724:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:57,724:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:17:58,908:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:17:58,909:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:17:58,909:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:00,176:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:00,176:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:00,176:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:01,508:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:01,508:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:01,508:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:02,822:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:02,822:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:02,822:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:04,040:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:04,040:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:04,040:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:05,260:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:05,260:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:05,260:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:06,670:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:06,670:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:06,670:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:08,032:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:08,032:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:08,032:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:09,238:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:09,238:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:09,238:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:10,587:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:10,587:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:10,587:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:11,760:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:11,760:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:11,760:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:13,040:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:13,040:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:13,040:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:14,305:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:14,305:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:14,305:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:15,478:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:15,478:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:15,478:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:16,732:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:16,732:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:16,732:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:17,922:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:17,922:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:17,922:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:19,203:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:19,204:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:19,204:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:20,612:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:20,612:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:20,612:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:21,912:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:21,912:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:21,912:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:23,321:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:23,321:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:23,321:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:24,619:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:24,619:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:24,619:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:25,806:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:25,806:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:25,806:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:30,127:INFO:Scoring test/hold-out set
+2023-08-17 14:18:30,132:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:30,132:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:30,132:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:30,567:INFO:Visual Rendered Successfully
+2023-08-17 14:18:30,726:INFO:plot_model() successfully completed......................................
+2023-08-17 14:18:55,531:INFO:Initializing plot_model()
+2023-08-17 14:18:55,531:INFO:plot_model(plot=pr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:18:55,531:INFO:Checking exceptions
+2023-08-17 14:18:55,544:INFO:Preloading libraries
+2023-08-17 14:18:55,548:INFO:Copying training dataset
+2023-08-17 14:18:55,549:INFO:Plot type: pr
+2023-08-17 14:18:55,871:INFO:Fitting Model
+2023-08-17 14:18:55,875:INFO:Scoring test/hold-out set
+2023-08-17 14:18:55,879:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:55,879:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:55,879:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:56,015:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:18:56,015:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:18:56,016:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:18:56,359:INFO:Visual Rendered Successfully
+2023-08-17 14:18:56,496:INFO:plot_model() successfully completed......................................
+2023-08-17 14:20:02,079:INFO:Initializing plot_model()
+2023-08-17 14:20:02,079:INFO:plot_model(plot=error, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:20:02,079:INFO:Checking exceptions
+2023-08-17 14:20:02,091:INFO:Preloading libraries
+2023-08-17 14:20:02,096:INFO:Copying training dataset
+2023-08-17 14:20:02,096:INFO:Plot type: error
+2023-08-17 14:20:02,459:INFO:Fitting Model
+2023-08-17 14:20:02,460:INFO:Scoring test/hold-out set
+2023-08-17 14:20:02,465:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:20:02,465:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:20:02,465:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:20:02,605:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:20:02,606:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:20:02,606:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:20:02,871:INFO:Visual Rendered Successfully
+2023-08-17 14:20:03,009:INFO:plot_model() successfully completed......................................
+2023-08-17 14:20:11,015:INFO:Initializing plot_model()
+2023-08-17 14:20:11,015:INFO:plot_model(plot=class_report, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:20:11,015:INFO:Checking exceptions
+2023-08-17 14:20:11,025:INFO:Preloading libraries
+2023-08-17 14:20:11,030:INFO:Copying training dataset
+2023-08-17 14:20:11,030:INFO:Plot type: class_report
+2023-08-17 14:20:11,352:INFO:Fitting Model
+2023-08-17 14:20:11,353:INFO:Scoring test/hold-out set
+2023-08-17 14:20:11,358:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:20:11,358:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:20:11,358:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:20:11,507:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:20:11,507:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:20:11,507:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:20:11,813:INFO:Visual Rendered Successfully
+2023-08-17 14:20:11,966:INFO:plot_model() successfully completed......................................
+2023-08-17 14:20:58,255:INFO:Initializing plot_model()
+2023-08-17 14:20:58,255:INFO:plot_model(plot=rfe, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:20:58,256:INFO:Checking exceptions
+2023-08-17 14:20:59,381:INFO:Initializing plot_model()
+2023-08-17 14:20:59,381:INFO:plot_model(plot=learning, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:20:59,381:INFO:Checking exceptions
+2023-08-17 14:20:59,392:INFO:Preloading libraries
+2023-08-17 14:20:59,397:INFO:Copying training dataset
+2023-08-17 14:20:59,397:INFO:Plot type: learning
+2023-08-17 14:20:59,745:INFO:Fitting Model
+2023-08-17 14:21:52,455:INFO:Visual Rendered Successfully
+2023-08-17 14:21:52,624:INFO:plot_model() successfully completed......................................
+2023-08-17 14:22:26,820:INFO:Initializing plot_model()
+2023-08-17 14:22:26,820:INFO:plot_model(plot=manifold, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:22:26,820:INFO:Checking exceptions
+2023-08-17 14:22:26,831:INFO:Preloading libraries
+2023-08-17 14:22:26,835:INFO:Copying training dataset
+2023-08-17 14:22:26,835:INFO:Plot type: manifold
+2023-08-17 14:22:27,197:INFO:Fitting & Transforming Model
+2023-08-17 14:28:43,667:INFO:Visual Rendered Successfully
+2023-08-17 14:28:43,820:INFO:plot_model() successfully completed......................................
+2023-08-17 14:29:08,578:INFO:Initializing plot_model()
+2023-08-17 14:29:08,578:INFO:plot_model(plot=calibration, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:29:08,578:INFO:Checking exceptions
+2023-08-17 14:29:08,590:INFO:Preloading libraries
+2023-08-17 14:29:08,595:INFO:Copying training dataset
+2023-08-17 14:29:08,595:INFO:Plot type: calibration
+2023-08-17 14:29:08,605:INFO:Scoring test/hold-out set
+2023-08-17 14:29:08,702:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:29:08,702:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:29:08,702:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:29:09,058:INFO:Visual Rendered Successfully
+2023-08-17 14:29:09,215:INFO:plot_model() successfully completed......................................
+2023-08-17 14:29:34,832:INFO:Initializing plot_model()
+2023-08-17 14:29:34,832:INFO:plot_model(plot=vc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:29:34,832:INFO:Checking exceptions
+2023-08-17 14:29:34,843:INFO:Preloading libraries
+2023-08-17 14:29:34,848:INFO:Copying training dataset
+2023-08-17 14:29:34,848:INFO:Plot type: vc
+2023-08-17 14:29:34,848:INFO:Determining param_name
+2023-08-17 14:29:37,061:INFO:Initializing plot_model()
+2023-08-17 14:29:37,061:INFO:plot_model(plot=dimension, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:29:37,061:INFO:Checking exceptions
+2023-08-17 14:29:37,071:INFO:Preloading libraries
+2023-08-17 14:29:37,076:INFO:Copying training dataset
+2023-08-17 14:29:37,076:INFO:Plot type: dimension
+2023-08-17 14:29:37,203:INFO:Fitting StandardScaler()
+2023-08-17 14:29:37,359:INFO:Fitting PCA()
+2023-08-17 14:29:38,059:INFO:Fitting & Transforming Model
+2023-08-17 14:29:40,764:INFO:Visual Rendered Successfully
+2023-08-17 14:29:40,921:INFO:plot_model() successfully completed......................................
+2023-08-17 14:30:14,703:INFO:Initializing plot_model()
+2023-08-17 14:30:14,703:INFO:plot_model(plot=boundary, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:30:14,703:INFO:Checking exceptions
+2023-08-17 14:30:14,714:INFO:Preloading libraries
+2023-08-17 14:30:14,719:INFO:Copying training dataset
+2023-08-17 14:30:14,719:INFO:Plot type: boundary
+2023-08-17 14:30:14,922:INFO:Fitting StandardScaler()
+2023-08-17 14:30:15,006:INFO:Fitting PCA()
+2023-08-17 14:30:15,699:INFO:Fitting Model
+2023-08-17 14:30:18,096:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:30:18,096:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:30:18,096:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:30:19,896:INFO:Visual Rendered Successfully
+2023-08-17 14:30:20,076:INFO:plot_model() successfully completed......................................
+2023-08-17 14:31:12,618:INFO:Initializing plot_model()
+2023-08-17 14:31:12,619:INFO:plot_model(plot=lift, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:31:12,619:INFO:Checking exceptions
+2023-08-17 14:31:12,631:INFO:Preloading libraries
+2023-08-17 14:31:12,636:INFO:Copying training dataset
+2023-08-17 14:31:12,636:INFO:Plot type: lift
+2023-08-17 14:31:12,636:INFO:Generating predictions / predict_proba on X_test
+2023-08-17 14:31:12,800:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:31:12,800:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:31:12,800:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:31:13,108:INFO:Visual Rendered Successfully
+2023-08-17 14:31:13,253:INFO:plot_model() successfully completed......................................
+2023-08-17 14:31:57,995:INFO:Initializing plot_model()
+2023-08-17 14:31:57,995:INFO:plot_model(plot=gain, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:31:57,995:INFO:Checking exceptions
+2023-08-17 14:31:58,007:INFO:Preloading libraries
+2023-08-17 14:31:58,011:INFO:Copying training dataset
+2023-08-17 14:31:58,011:INFO:Plot type: gain
+2023-08-17 14:31:58,012:INFO:Generating predictions / predict_proba on X_test
+2023-08-17 14:31:58,187:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:31:58,188:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:31:58,188:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:31:58,466:INFO:Visual Rendered Successfully
+2023-08-17 14:31:58,602:INFO:plot_model() successfully completed......................................
+2023-08-17 14:32:34,540:INFO:Initializing plot_model()
+2023-08-17 14:32:34,540:INFO:plot_model(plot=tree, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:32:34,540:INFO:Checking exceptions
+2023-08-17 14:32:35,484:INFO:Initializing plot_model()
+2023-08-17 14:32:35,484:INFO:plot_model(plot=ks, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, system=True)
+2023-08-17 14:32:35,484:INFO:Checking exceptions
+2023-08-17 14:32:35,496:INFO:Preloading libraries
+2023-08-17 14:32:35,500:INFO:Copying training dataset
+2023-08-17 14:32:35,500:INFO:Plot type: ks
+2023-08-17 14:32:35,501:INFO:Generating predictions / predict_proba on X_test
+2023-08-17 14:32:35,628:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2023-08-17 14:32:35,628:INFO:[LightGBM] [Warning] bagging_fraction is set=0.7, subsample=1.0 will be ignored. Current value: bagging_fraction=0.7
+2023-08-17 14:32:35,628:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-08-17 14:32:36,340:INFO:Visual Rendered Successfully
+2023-08-17 14:32:36,484:INFO:plot_model() successfully completed......................................
+2023-08-17 14:33:24,275:INFO:Initializing predict_model()
+2023-08-17 14:33:24,275:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             importance_type='split',
+                                             learning_rate=0.1, max_depth=-1,
+                                             min_child_samples=20,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.0,
+                                             n_estimators=100, n_jobs=-1,
+                                             num_leaves=31, objective=None,
+                                             random_state=559, reg_alpha=0.0,
+                                             reg_lambda=0.0, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A7D337C430>)
+2023-08-17 14:33:24,275:INFO:Checking exceptions
+2023-08-17 14:33:24,275:INFO:Preloading libraries
+2023-08-17 14:33:24,277:INFO:Set up data.
+2023-08-17 14:33:24,302:INFO:Set up index.
+2023-08-17 14:33:25,521:INFO:Initializing predict_model()
+2023-08-17 14:33:25,522:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A7D337C430>)
+2023-08-17 14:33:25,522:INFO:Checking exceptions
+2023-08-17 14:33:25,522:INFO:Preloading libraries
+2023-08-17 14:33:25,523:INFO:Set up data.
+2023-08-17 14:33:25,552:INFO:Set up index.
+2023-08-17 14:34:47,532:INFO:Initializing predict_model()
+2023-08-17 14:34:47,533:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             importance_type='split',
+                                             learning_rate=0.1, max_depth=-1,
+                                             min_child_samples=20,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.0,
+                                             n_estimators=100, n_jobs=-1,
+                                             num_leaves=31, objective=None,
+                                             random_state=559, reg_alpha=0.0,
+                                             reg_lambda=0.0, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A804C6EA70>)
+2023-08-17 14:34:47,533:INFO:Checking exceptions
+2023-08-17 14:34:47,533:INFO:Preloading libraries
+2023-08-17 14:34:47,534:INFO:Set up data.
+2023-08-17 14:34:47,565:INFO:Set up index.
+2023-08-17 14:34:48,521:INFO:Initializing predict_model()
+2023-08-17 14:34:48,521:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A804C6EA70>)
+2023-08-17 14:34:48,521:INFO:Checking exceptions
+2023-08-17 14:34:48,521:INFO:Preloading libraries
+2023-08-17 14:34:48,522:INFO:Set up data.
+2023-08-17 14:34:48,548:INFO:Set up index.
+2023-08-17 14:35:17,722:INFO:Initializing predict_model()
+2023-08-17 14:35:17,722:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             importance_type='split',
+                                             learning_rate=0.1, max_depth=-1,
+                                             min_child_samples=20,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.0,
+                                             n_estimators=100, n_jobs=-1,
+                                             num_leaves=31, objective=None,
+                                             random_state=559, reg_alpha=0.0,
+                                             reg_lambda=0.0, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A8012FFC70>)
+2023-08-17 14:35:17,722:INFO:Checking exceptions
+2023-08-17 14:35:17,722:INFO:Preloading libraries
+2023-08-17 14:35:17,724:INFO:Set up data.
+2023-08-17 14:35:17,749:INFO:Set up index.
+2023-08-17 14:35:18,691:INFO:Initializing predict_model()
+2023-08-17 14:35:18,691:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(bagging_fraction=0.7,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.8,
+                                             importance_type='split',
+                                             learning_rate=0.3, max_depth=-1,
+                                             min_child_samples=61,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.9,
+                                             n_estimators=230, n_jobs=-1,
+                                             num_leaves=9...
+                                             random_state=559, reg_alpha=0.05,
+                                             reg_lambda=1e-06, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A8012FFC70>)
+2023-08-17 14:35:18,691:INFO:Checking exceptions
+2023-08-17 14:35:18,691:INFO:Preloading libraries
+2023-08-17 14:35:18,693:INFO:Set up data.
+2023-08-17 14:35:18,718:INFO:Set up index.
+2023-08-17 14:41:24,582:INFO:Initializing finalize_model()
+2023-08-17 14:41:24,582:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             importance_type='split',
+                                             learning_rate=0.1, max_depth=-1,
+                                             min_child_samples=20,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.0,
+                                             n_estimators=100, n_jobs=-1,
+                                             num_leaves=31, objective=None,
+                                             random_state=559, reg_alpha=0.0,
+                                             reg_lambda=0.0, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2023-08-17 14:41:24,583:INFO:Finalizing VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             importance_type='split',
+                                             learning_rate=0.1, max_depth=-1,
+                                             min_child_samples=20,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.0,
+                                             n_estimators=100, n_jobs=-1,
+                                             num_leaves=31, objective=None,
+                                             random_state=559, reg_alpha=0.0,
+                                             reg_lambda=0.0, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None)
+2023-08-17 14:41:24,592:INFO:Initializing create_model()
+2023-08-17 14:41:24,593:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             importance_type='split',
+                                             learning_rate=0.1, max_depth=-1,
+                                             min_child_samples=20,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.0,
+                                             n_estimators=100, n_jobs=-1,
+                                             num_leaves=31, objective=None,
+                                             random_state=559, reg_alpha=0.0,
+                                             reg_lambda=0.0, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, kwargs={})
+2023-08-17 14:41:24,593:INFO:Checking exceptions
+2023-08-17 14:41:24,595:INFO:Importing libraries
+2023-08-17 14:41:24,596:INFO:Copying training dataset
+2023-08-17 14:41:24,599:INFO:Defining folds
+2023-08-17 14:41:24,599:INFO:Declaring metric variables
+2023-08-17 14:41:24,600:INFO:Importing untrained model
+2023-08-17 14:41:24,600:INFO:Declaring custom model
+2023-08-17 14:41:24,601:INFO:Voting Classifier Imported successfully
+2023-08-17 14:41:24,608:INFO:Cross validation set to False
+2023-08-17 14:41:24,608:INFO:Fitting Model
+2023-08-17 14:41:43,971:INFO:Pipeline(memory=FastMemory(location=C:\Users\Ramon\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Height_(cm)', 'Weight_(kg)',
+                                             'Alcohol_Consumption',
+                                             'Fruit_Consumption',
+                                             'Green_Vegetables_Consumption'...
+                                                              reg_lambda=0.0,
+                                                              subsample=1.0,
+                                                              subsample_for_bin=200000,
+                                                              subsample_freq=0)),
+                                              ('Quadratic Discriminant '
+                                               'Analysis',
+                                               QuadraticDiscriminantAnalysis(priors=None,
+                                                                             reg_param=0.0,
+                                                                             store_covariance=False,
+                                                                             tol=0.0001)),
+                                              ('Naive Bayes',
+                                               GaussianNB(priors=None,
+                                                          var_smoothing=1e-09))],
+                                  flatten_transform=True, n_jobs=-1,
+                                  verbose=False, voting='soft',
+                                  weights=None))],
+         verbose=False)
+2023-08-17 14:41:43,971:INFO:create_model() successfully completed......................................
+2023-08-17 14:41:44,132:INFO:_master_model_container: 27
+2023-08-17 14:41:44,132:INFO:_display_container: 16
+2023-08-17 14:41:44,172:INFO:Pipeline(memory=FastMemory(location=C:\Users\Ramon\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Height_(cm)', 'Weight_(kg)',
+                                             'Alcohol_Consumption',
+                                             'Fruit_Consumption',
+                                             'Green_Vegetables_Consumption'...
+                                                              reg_lambda=0.0,
+                                                              subsample=1.0,
+                                                              subsample_for_bin=200000,
+                                                              subsample_freq=0)),
+                                              ('Quadratic Discriminant '
+                                               'Analysis',
+                                               QuadraticDiscriminantAnalysis(priors=None,
+                                                                             reg_param=0.0,
+                                                                             store_covariance=False,
+                                                                             tol=0.0001)),
+                                              ('Naive Bayes',
+                                               GaussianNB(priors=None,
+                                                          var_smoothing=1e-09))],
+                                  flatten_transform=True, n_jobs=-1,
+                                  verbose=False, voting='soft',
+                                  weights=None))],
+         verbose=False)
+2023-08-17 14:41:44,172:INFO:finalize_model() successfully completed......................................
+2023-08-17 14:43:01,690:INFO:Initializing save_model()
+2023-08-17 14:43:01,690:INFO:save_model(model=VotingClassifier(estimators=[('Light Gradient Boosting Machine',
+                              LGBMClassifier(boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             importance_type='split',
+                                             learning_rate=0.1, max_depth=-1,
+                                             min_child_samples=20,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.0,
+                                             n_estimators=100, n_jobs=-1,
+                                             num_leaves=31, objective=None,
+                                             random_state=559, reg_alpha=0.0,
+                                             reg_lambda=0.0, subsample=1.0,
+                                             subsample_for_bin=200000,
+                                             subsample_freq=0)),
+                             ('Quadratic Discriminant Analysis',
+                              QuadraticDiscriminantAnalysis(priors=None,
+                                                            reg_param=0.0,
+                                                            store_covariance=False,
+                                                            tol=0.0001)),
+                             ('Naive Bayes',
+                              GaussianNB(priors=None, var_smoothing=1e-09))],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), model_name=final_blended_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Ramon\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Height_(cm)', 'Weight_(kg)',
+                                             'Alcohol_Consumption',
+                                             'Fruit_Consumption',
+                                             'Green_Vegetables_Consumption'...
+                                    transformer=RemoveOutliers(method='iforest',
+                                                               n_jobs=1,
+                                                               random_state=559,
+                                                               threshold=0.05))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2023-08-17 14:43:01,690:INFO:Adding model into prep_pipe
+2023-08-17 14:43:01,731:INFO:final_blended_model.pkl saved in current working directory
+2023-08-17 14:43:01,787:INFO:Pipeline(memory=FastMemory(location=C:\Users\Ramon\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Height_(cm)', 'Weight_(kg)',
+                                             'Alcohol_Consumption',
+                                             'Fruit_Consumption',
+                                             'Green_Vegetables_Consumption'...
+                                                              reg_lambda=0.0,
+                                                              subsample=1.0,
+                                                              subsample_for_bin=200000,
+                                                              subsample_freq=0)),
+                                              ('Quadratic Discriminant '
+                                               'Analysis',
+                                               QuadraticDiscriminantAnalysis(priors=None,
+                                                                             reg_param=0.0,
+                                                                             store_covariance=False,
+                                                                             tol=0.0001)),
+                                              ('Naive Bayes',
+                                               GaussianNB(priors=None,
+                                                          var_smoothing=1e-09))],
+                                  flatten_transform=True, n_jobs=-1,
+                                  verbose=False, voting='soft',
+                                  weights=None))],
+         verbose=False)
+2023-08-17 14:43:01,787:INFO:save_model() successfully completed......................................
+2023-08-17 14:43:13,540:INFO:Initializing save_model()
+2023-08-17 14:43:13,540:INFO:save_model(model=Pipeline(memory=FastMemory(location=C:\Users\Ramon\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Height_(cm)', 'Weight_(kg)',
+                                             'Alcohol_Consumption',
+                                             'Fruit_Consumption',
+                                             'Green_Vegetables_Consumption'...
+                                                              reg_lambda=0.0,
+                                                              subsample=1.0,
+                                                              subsample_for_bin=200000,
+                                                              subsample_freq=0)),
+                                              ('Quadratic Discriminant '
+                                               'Analysis',
+                                               QuadraticDiscriminantAnalysis(priors=None,
+                                                                             reg_param=0.0,
+                                                                             store_covariance=False,
+                                                                             tol=0.0001)),
+                                              ('Naive Bayes',
+                                               GaussianNB(priors=None,
+                                                          var_smoothing=1e-09))],
+                                  flatten_transform=True, n_jobs=-1,
+                                  verbose=False, voting='soft',
+                                  weights=None))],
+         verbose=False), model_name=final_blended_model, prep_pipe_=None, verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={'format': 'json'})
+2023-08-17 14:43:13,540:INFO:Adding model into prep_pipe
+2023-08-17 14:43:13,540:WARNING:Only Model saved as it was a pipeline.
+2023-08-17 14:45:08,745:INFO:Initializing load_model()
+2023-08-17 14:45:08,745:INFO:load_model(model_name=final_blended_model, platform=None, authentication=None, verbose=True)
+2023-08-17 14:45:08,832:INFO:Initializing predict_model()
+2023-08-17 14:45:08,832:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=Pipeline(memory=FastMemory(location=C:\Users\Ramon\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Height_(cm)', 'Weight_(kg)',
+                                             'Alcohol_Consumption',
+                                             'Fruit_Consumption',
+                                             'Green_Vegetables_Consumption'...
+                                                              reg_lambda=0.0,
+                                                              subsample=1.0,
+                                                              subsample_for_bin=200000,
+                                                              subsample_freq=0)),
+                                              ('Quadratic Discriminant '
+                                               'Analysis',
+                                               QuadraticDiscriminantAnalysis(priors=None,
+                                                                             reg_param=0.0,
+                                                                             store_covariance=False,
+                                                                             tol=0.0001)),
+                                              ('Naive Bayes',
+                                               GaussianNB(priors=None,
+                                                          var_smoothing=1e-09))],
+                                  flatten_transform=True, n_jobs=-1,
+                                  verbose=False, voting='soft',
+                                  weights=None))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A7D73CBF40>)
+2023-08-17 14:45:08,833:INFO:Checking exceptions
+2023-08-17 14:45:08,833:INFO:Preloading libraries
+2023-08-17 14:45:08,835:INFO:Set up data.
+2023-08-17 14:45:08,864:INFO:Set up index.
+2023-08-17 14:45:30,146:INFO:Initializing load_model()
+2023-08-17 14:45:30,146:INFO:load_model(model_name=final_blended_model, platform=None, authentication=None, verbose=True)
+2023-08-17 14:45:30,525:INFO:Initializing predict_model()
+2023-08-17 14:45:30,525:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001A7E0C1CD00>, estimator=Pipeline(memory=FastMemory(location=C:\Users\Ramon\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Height_(cm)', 'Weight_(kg)',
+                                             'Alcohol_Consumption',
+                                             'Fruit_Consumption',
+                                             'Green_Vegetables_Consumption'...
+                                                              reg_lambda=0.0,
+                                                              subsample=1.0,
+                                                              subsample_for_bin=200000,
+                                                              subsample_freq=0)),
+                                              ('Quadratic Discriminant '
+                                               'Analysis',
+                                               QuadraticDiscriminantAnalysis(priors=None,
+                                                                             reg_param=0.0,
+                                                                             store_covariance=False,
+                                                                             tol=0.0001)),
+                                              ('Naive Bayes',
+                                               GaussianNB(priors=None,
+                                                          var_smoothing=1e-09))],
+                                  flatten_transform=True, n_jobs=-1,
+                                  verbose=False, voting='soft',
+                                  weights=None))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A7D9B78160>)
+2023-08-17 14:45:30,525:INFO:Checking exceptions
+2023-08-17 14:45:30,525:INFO:Preloading libraries
+2023-08-17 14:45:30,527:INFO:Set up data.
+2023-08-17 14:45:30,548:INFO:Set up index.
