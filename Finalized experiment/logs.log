@@ -42487,3 +42487,1834 @@ AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
 2023-08-18 22:25:26,696:INFO:Preloading libraries
 2023-08-18 22:25:26,698:INFO:Set up data.
 2023-08-18 22:25:26,726:INFO:Set up index.
+2023-08-19 09:57:35,438:INFO:Initializing stack_models()
+2023-08-19 09:57:35,438:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Recall, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 09:57:35,438:INFO:Checking exceptions
+2023-08-19 09:57:35,452:INFO:Defining meta model
+2023-08-19 09:57:35,465:INFO:Getting model names
+2023-08-19 09:57:35,465:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 09:57:35,468:INFO:SubProcess create_model() called ==================================
+2023-08-19 09:57:35,470:INFO:Initializing create_model()
+2023-08-19 09:57:35,471:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2E074DF0>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 09:57:35,471:INFO:Checking exceptions
+2023-08-19 09:57:35,471:INFO:Importing libraries
+2023-08-19 09:57:35,471:INFO:Copying training dataset
+2023-08-19 09:57:35,523:INFO:Defining folds
+2023-08-19 09:57:35,523:INFO:Declaring metric variables
+2023-08-19 09:57:35,525:INFO:Importing untrained model
+2023-08-19 09:57:35,525:INFO:Declaring custom model
+2023-08-19 09:57:35,528:INFO:Stacking Classifier Imported successfully
+2023-08-19 09:57:35,535:INFO:Starting cross validation
+2023-08-19 09:57:35,542:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 09:57:50,617:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:50,629:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:50,653:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:50,679:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:50,713:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:50,882:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:51,040:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:51,269:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:51,274:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:51,284:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:55,540:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:55,547:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:55,577:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:55,727:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:55,765:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:57,362:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:57,630:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:57,762:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:57,801:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:57,914:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:57,964:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:58,728:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:58,732:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:58,748:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:59,174:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:59,306:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:57:59,409:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:00,423:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:00,601:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:00,609:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:00,730:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:00,734:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:01,166:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:01,186:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:01,251:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:01,548:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:01,582:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:02,538:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:02,604:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:02,710:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:02,773:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:02,893:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:03,346:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:03,364:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:03,383:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:03,623:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:03,749:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:04,534:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:04,617:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:04,753:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:04,861:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:04,963:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:05,327:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:05,428:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:05,460:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:05,520:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:05,721:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:06,169:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:06,179:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:06,300:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:06,311:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:06,368:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 09:58:28,370:INFO:Calculating mean and std
+2023-08-19 09:58:28,371:INFO:Creating metrics dataframe
+2023-08-19 09:58:28,375:INFO:Finalizing model
+2023-08-19 09:58:35,368:INFO:[LightGBM] [Info] Number of positive: 13203, number of negative: 171645
+2023-08-19 09:58:35,391:INFO:[LightGBM] [Warning] Auto-choosing row-wise multi-threading, the overhead of testing was 0.006772 seconds.
+2023-08-19 09:58:35,391:INFO:You can set `force_row_wise=true` to remove the overhead.
+2023-08-19 09:58:35,391:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2023-08-19 09:58:35,391:INFO:[LightGBM] [Info] Total Bins 1232
+2023-08-19 09:58:35,391:INFO:[LightGBM] [Info] Number of data points in the train set: 184848, number of used features: 35
+2023-08-19 09:58:35,392:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.071426 -> initscore=-2.564984
+2023-08-19 09:58:35,392:INFO:[LightGBM] [Info] Start training from score -2.564984
+2023-08-19 09:58:36,064:INFO:Uploading results into container
+2023-08-19 09:58:36,064:INFO:Uploading model into container now
+2023-08-19 09:58:36,065:INFO:_master_model_container: 91
+2023-08-19 09:58:36,065:INFO:_display_container: 44
+2023-08-19 09:58:36,068:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 09:58:36,068:INFO:create_model() successfully completed......................................
+2023-08-19 09:58:36,230:INFO:SubProcess create_model() end ==================================
+2023-08-19 09:58:36,237:INFO:_master_model_container: 91
+2023-08-19 09:58:36,237:INFO:_display_container: 44
+2023-08-19 09:58:36,239:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 09:58:36,239:INFO:stack_models() successfully completed......................................
+2023-08-19 10:03:59,101:INFO:Initializing stack_models()
+2023-08-19 10:03:59,101:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Recall, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:03:59,101:INFO:Checking exceptions
+2023-08-19 10:03:59,118:INFO:Defining meta model
+2023-08-19 10:03:59,132:INFO:Getting model names
+2023-08-19 10:03:59,133:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:03:59,136:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:03:59,138:INFO:Initializing create_model()
+2023-08-19 10:03:59,138:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2DB557B0>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:03:59,139:INFO:Checking exceptions
+2023-08-19 10:03:59,139:INFO:Importing libraries
+2023-08-19 10:03:59,139:INFO:Copying training dataset
+2023-08-19 10:03:59,186:INFO:Defining folds
+2023-08-19 10:03:59,186:INFO:Declaring metric variables
+2023-08-19 10:03:59,188:INFO:Importing untrained model
+2023-08-19 10:03:59,188:INFO:Declaring custom model
+2023-08-19 10:03:59,191:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:03:59,196:INFO:Starting cross validation
+2023-08-19 10:03:59,204:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:04:06,091:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:06,110:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:06,922:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:07,047:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:07,136:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:07,261:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:07,290:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:07,334:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:07,363:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:11,375:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:11,516:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:11,562:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:12,810:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:12,838:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:12,875:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:12,960:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:12,973:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:13,077:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:13,147:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:13,312:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:14,035:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:14,329:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:14,465:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:15,201:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:15,215:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:15,260:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:15,372:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:15,873:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:16,129:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:16,269:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:16,873:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:16,991:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:16,995:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:17,052:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:17,211:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:17,668:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:17,921:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:17,953:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:18,536:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:18,635:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:18,654:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:18,658:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:18,825:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:19,203:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:19,519:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:19,541:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:20,118:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:20,127:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:20,161:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:20,201:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:20,224:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:21,239:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:22,099:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:22,415:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:22,903:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:23,258:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:23,700:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:24,030:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:24,458:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:24,740:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:25,455:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:37,410:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:37,584:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:38,035:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:38,161:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:38,298:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:38,414:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:38,453:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:40,982:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:41,057:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:41,078:WARNING:c:\Users\Ramon\miniforge3\envs\PyCaretEnv\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-08-19 10:04:43,465:INFO:Calculating mean and std
+2023-08-19 10:04:43,466:INFO:Creating metrics dataframe
+2023-08-19 10:04:43,470:INFO:Finalizing model
+2023-08-19 10:04:50,753:INFO:Uploading results into container
+2023-08-19 10:04:50,754:INFO:Uploading model into container now
+2023-08-19 10:04:50,754:INFO:_master_model_container: 92
+2023-08-19 10:04:50,754:INFO:_display_container: 45
+2023-08-19 10:04:50,757:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:04:50,757:INFO:create_model() successfully completed......................................
+2023-08-19 10:04:50,903:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:04:50,909:INFO:_master_model_container: 92
+2023-08-19 10:04:50,909:INFO:_display_container: 45
+2023-08-19 10:04:50,910:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:04:50,910:INFO:stack_models() successfully completed......................................
+2023-08-19 10:09:57,930:INFO:Initializing stack_models()
+2023-08-19 10:09:57,930:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:09:57,931:INFO:Checking exceptions
+2023-08-19 10:09:57,946:INFO:Defining meta model
+2023-08-19 10:09:57,959:INFO:Getting model names
+2023-08-19 10:09:57,959:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:09:57,963:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:09:57,966:INFO:Initializing create_model()
+2023-08-19 10:09:57,966:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2D1EA650>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:09:57,966:INFO:Checking exceptions
+2023-08-19 10:09:57,966:INFO:Importing libraries
+2023-08-19 10:09:57,966:INFO:Copying training dataset
+2023-08-19 10:09:58,009:INFO:Defining folds
+2023-08-19 10:09:58,009:INFO:Declaring metric variables
+2023-08-19 10:09:58,012:INFO:Importing untrained model
+2023-08-19 10:09:58,012:INFO:Declaring custom model
+2023-08-19 10:09:58,017:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:09:58,023:INFO:Starting cross validation
+2023-08-19 10:09:58,029:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:10:07,629:INFO:Calculating mean and std
+2023-08-19 10:10:07,630:INFO:Creating metrics dataframe
+2023-08-19 10:10:07,634:INFO:Finalizing model
+2023-08-19 10:10:08,648:INFO:Uploading results into container
+2023-08-19 10:10:08,649:INFO:Uploading model into container now
+2023-08-19 10:10:08,649:INFO:_master_model_container: 93
+2023-08-19 10:10:08,649:INFO:_display_container: 46
+2023-08-19 10:10:08,651:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:10:08,651:INFO:create_model() successfully completed......................................
+2023-08-19 10:10:08,838:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:10:08,847:INFO:_master_model_container: 93
+2023-08-19 10:10:08,847:INFO:_display_container: 46
+2023-08-19 10:10:08,849:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:10:08,850:INFO:stack_models() successfully completed......................................
+2023-08-19 10:10:33,442:INFO:Initializing stack_models()
+2023-08-19 10:10:33,442:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:10:33,442:INFO:Checking exceptions
+2023-08-19 10:10:33,456:INFO:Defining meta model
+2023-08-19 10:10:33,469:INFO:Getting model names
+2023-08-19 10:10:33,470:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:10:33,474:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:10:33,478:INFO:Initializing create_model()
+2023-08-19 10:10:33,478:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2D5F53F0>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:10:33,478:INFO:Checking exceptions
+2023-08-19 10:10:33,478:INFO:Importing libraries
+2023-08-19 10:10:33,478:INFO:Copying training dataset
+2023-08-19 10:10:33,532:INFO:Defining folds
+2023-08-19 10:10:33,532:INFO:Declaring metric variables
+2023-08-19 10:10:33,534:INFO:Importing untrained model
+2023-08-19 10:10:33,534:INFO:Declaring custom model
+2023-08-19 10:10:33,539:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:10:33,544:INFO:Starting cross validation
+2023-08-19 10:10:33,550:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:10:43,084:INFO:Calculating mean and std
+2023-08-19 10:10:43,085:INFO:Creating metrics dataframe
+2023-08-19 10:10:43,090:INFO:Finalizing model
+2023-08-19 10:10:44,098:INFO:Uploading results into container
+2023-08-19 10:10:44,098:INFO:Uploading model into container now
+2023-08-19 10:10:44,099:INFO:_master_model_container: 94
+2023-08-19 10:10:44,099:INFO:_display_container: 47
+2023-08-19 10:10:44,101:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:10:44,101:INFO:create_model() successfully completed......................................
+2023-08-19 10:10:44,250:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:10:44,258:INFO:_master_model_container: 94
+2023-08-19 10:10:44,258:INFO:_display_container: 47
+2023-08-19 10:10:44,260:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:10:44,260:INFO:stack_models() successfully completed......................................
+2023-08-19 10:10:51,285:INFO:Initializing stack_models()
+2023-08-19 10:10:51,285:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:10:51,285:INFO:Checking exceptions
+2023-08-19 10:10:51,298:INFO:Defining meta model
+2023-08-19 10:10:51,311:INFO:Getting model names
+2023-08-19 10:10:51,311:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:10:51,314:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:10:51,316:INFO:Initializing create_model()
+2023-08-19 10:10:51,316:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2543C2E0>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:10:51,316:INFO:Checking exceptions
+2023-08-19 10:10:51,317:INFO:Importing libraries
+2023-08-19 10:10:51,317:INFO:Copying training dataset
+2023-08-19 10:10:51,353:INFO:Defining folds
+2023-08-19 10:10:51,353:INFO:Declaring metric variables
+2023-08-19 10:10:51,356:INFO:Importing untrained model
+2023-08-19 10:10:51,356:INFO:Declaring custom model
+2023-08-19 10:10:51,358:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:10:51,363:INFO:Starting cross validation
+2023-08-19 10:10:51,370:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:10:57,664:INFO:Calculating mean and std
+2023-08-19 10:10:57,665:INFO:Creating metrics dataframe
+2023-08-19 10:10:57,669:INFO:Finalizing model
+2023-08-19 10:10:58,664:INFO:Uploading results into container
+2023-08-19 10:10:58,664:INFO:Uploading model into container now
+2023-08-19 10:10:58,665:INFO:_master_model_container: 95
+2023-08-19 10:10:58,665:INFO:_display_container: 48
+2023-08-19 10:10:58,667:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:10:58,668:INFO:create_model() successfully completed......................................
+2023-08-19 10:10:58,902:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:10:58,909:INFO:_master_model_container: 95
+2023-08-19 10:10:58,910:INFO:_display_container: 48
+2023-08-19 10:10:58,912:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:10:58,912:INFO:stack_models() successfully completed......................................
+2023-08-19 10:11:13,474:INFO:Initializing stack_models()
+2023-08-19 10:11:13,474:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:11:13,474:INFO:Checking exceptions
+2023-08-19 10:11:13,489:INFO:Defining meta model
+2023-08-19 10:11:13,502:INFO:Getting model names
+2023-08-19 10:11:13,502:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:11:13,505:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:11:13,507:INFO:Initializing create_model()
+2023-08-19 10:11:13,507:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2D34E200>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:11:13,507:INFO:Checking exceptions
+2023-08-19 10:11:13,508:INFO:Importing libraries
+2023-08-19 10:11:13,508:INFO:Copying training dataset
+2023-08-19 10:11:13,548:INFO:Defining folds
+2023-08-19 10:11:13,549:INFO:Declaring metric variables
+2023-08-19 10:11:13,551:INFO:Importing untrained model
+2023-08-19 10:11:13,551:INFO:Declaring custom model
+2023-08-19 10:11:13,555:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:11:13,560:INFO:Starting cross validation
+2023-08-19 10:11:13,566:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:11:19,449:INFO:Calculating mean and std
+2023-08-19 10:11:19,450:INFO:Creating metrics dataframe
+2023-08-19 10:11:19,455:INFO:Finalizing model
+2023-08-19 10:11:20,448:INFO:Uploading results into container
+2023-08-19 10:11:20,449:INFO:Uploading model into container now
+2023-08-19 10:11:20,449:INFO:_master_model_container: 96
+2023-08-19 10:11:20,449:INFO:_display_container: 49
+2023-08-19 10:11:20,452:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:11:20,452:INFO:create_model() successfully completed......................................
+2023-08-19 10:11:20,612:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:11:20,619:INFO:_master_model_container: 96
+2023-08-19 10:11:20,620:INFO:_display_container: 49
+2023-08-19 10:11:20,622:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:11:20,622:INFO:stack_models() successfully completed......................................
+2023-08-19 10:11:42,155:INFO:Initializing stack_models()
+2023-08-19 10:11:42,155:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:11:42,155:INFO:Checking exceptions
+2023-08-19 10:11:42,168:INFO:Defining meta model
+2023-08-19 10:11:42,181:INFO:Getting model names
+2023-08-19 10:11:42,181:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:11:42,184:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:11:42,186:INFO:Initializing create_model()
+2023-08-19 10:11:42,187:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2D5F4490>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:11:42,187:INFO:Checking exceptions
+2023-08-19 10:11:42,187:INFO:Importing libraries
+2023-08-19 10:11:42,187:INFO:Copying training dataset
+2023-08-19 10:11:42,248:INFO:Defining folds
+2023-08-19 10:11:42,248:INFO:Declaring metric variables
+2023-08-19 10:11:42,250:INFO:Importing untrained model
+2023-08-19 10:11:42,251:INFO:Declaring custom model
+2023-08-19 10:11:42,254:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:11:42,259:INFO:Starting cross validation
+2023-08-19 10:11:42,266:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:11:48,005:INFO:Calculating mean and std
+2023-08-19 10:11:48,006:INFO:Creating metrics dataframe
+2023-08-19 10:11:48,010:INFO:Finalizing model
+2023-08-19 10:11:49,012:INFO:Uploading results into container
+2023-08-19 10:11:49,013:INFO:Uploading model into container now
+2023-08-19 10:11:49,013:INFO:_master_model_container: 97
+2023-08-19 10:11:49,013:INFO:_display_container: 50
+2023-08-19 10:11:49,016:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:11:49,016:INFO:create_model() successfully completed......................................
+2023-08-19 10:11:49,210:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:11:49,217:INFO:_master_model_container: 97
+2023-08-19 10:11:49,218:INFO:_display_container: 50
+2023-08-19 10:11:49,220:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:11:49,220:INFO:stack_models() successfully completed......................................
+2023-08-19 10:12:25,929:INFO:Initializing stack_models()
+2023-08-19 10:12:25,929:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:12:25,930:INFO:Checking exceptions
+2023-08-19 10:12:25,954:INFO:Defining meta model
+2023-08-19 10:12:25,974:INFO:Getting model names
+2023-08-19 10:12:25,975:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:12:25,978:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:12:25,981:INFO:Initializing create_model()
+2023-08-19 10:12:25,981:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2D2BE920>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:12:25,981:INFO:Checking exceptions
+2023-08-19 10:12:25,982:INFO:Importing libraries
+2023-08-19 10:12:25,982:INFO:Copying training dataset
+2023-08-19 10:12:26,042:INFO:Defining folds
+2023-08-19 10:12:26,042:INFO:Declaring metric variables
+2023-08-19 10:12:26,045:INFO:Importing untrained model
+2023-08-19 10:12:26,045:INFO:Declaring custom model
+2023-08-19 10:12:26,049:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:12:26,053:INFO:Starting cross validation
+2023-08-19 10:12:26,060:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:12:31,955:INFO:Calculating mean and std
+2023-08-19 10:12:31,956:INFO:Creating metrics dataframe
+2023-08-19 10:12:31,960:INFO:Finalizing model
+2023-08-19 10:12:32,984:INFO:Uploading results into container
+2023-08-19 10:12:32,985:INFO:Uploading model into container now
+2023-08-19 10:12:32,985:INFO:_master_model_container: 98
+2023-08-19 10:12:32,985:INFO:_display_container: 51
+2023-08-19 10:12:32,987:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:12:32,988:INFO:create_model() successfully completed......................................
+2023-08-19 10:12:33,123:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:12:33,130:INFO:_master_model_container: 98
+2023-08-19 10:12:33,130:INFO:_display_container: 51
+2023-08-19 10:12:33,133:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:12:33,133:INFO:stack_models() successfully completed......................................
+2023-08-19 10:12:59,442:INFO:Initializing stack_models()
+2023-08-19 10:12:59,442:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:12:59,442:INFO:Checking exceptions
+2023-08-19 10:12:59,455:INFO:Defining meta model
+2023-08-19 10:12:59,468:INFO:Getting model names
+2023-08-19 10:12:59,468:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:12:59,471:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:12:59,473:INFO:Initializing create_model()
+2023-08-19 10:12:59,473:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2D0DC130>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:12:59,473:INFO:Checking exceptions
+2023-08-19 10:12:59,473:INFO:Importing libraries
+2023-08-19 10:12:59,473:INFO:Copying training dataset
+2023-08-19 10:12:59,518:INFO:Defining folds
+2023-08-19 10:12:59,518:INFO:Declaring metric variables
+2023-08-19 10:12:59,521:INFO:Importing untrained model
+2023-08-19 10:12:59,521:INFO:Declaring custom model
+2023-08-19 10:12:59,524:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:12:59,529:INFO:Starting cross validation
+2023-08-19 10:12:59,536:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:13:05,480:INFO:Calculating mean and std
+2023-08-19 10:13:05,481:INFO:Creating metrics dataframe
+2023-08-19 10:13:05,486:INFO:Finalizing model
+2023-08-19 10:13:06,534:INFO:Uploading results into container
+2023-08-19 10:13:06,535:INFO:Uploading model into container now
+2023-08-19 10:13:06,536:INFO:_master_model_container: 99
+2023-08-19 10:13:06,536:INFO:_display_container: 52
+2023-08-19 10:13:06,539:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:13:06,539:INFO:create_model() successfully completed......................................
+2023-08-19 10:13:06,752:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:13:06,758:INFO:_master_model_container: 99
+2023-08-19 10:13:06,759:INFO:_display_container: 52
+2023-08-19 10:13:06,761:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:13:06,761:INFO:stack_models() successfully completed......................................
+2023-08-19 10:17:15,077:INFO:Initializing stack_models()
+2023-08-19 10:17:15,078:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=precision, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:17:15,078:INFO:Checking exceptions
+2023-08-19 10:17:15,094:INFO:Defining meta model
+2023-08-19 10:17:15,106:INFO:Getting model names
+2023-08-19 10:17:15,107:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:17:15,109:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:17:15,112:INFO:Initializing create_model()
+2023-08-19 10:17:15,112:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2DC0D270>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:17:15,112:INFO:Checking exceptions
+2023-08-19 10:17:15,112:INFO:Importing libraries
+2023-08-19 10:17:15,112:INFO:Copying training dataset
+2023-08-19 10:17:15,144:INFO:Defining folds
+2023-08-19 10:17:15,144:INFO:Declaring metric variables
+2023-08-19 10:17:15,146:INFO:Importing untrained model
+2023-08-19 10:17:15,146:INFO:Declaring custom model
+2023-08-19 10:17:15,149:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:17:15,154:INFO:Starting cross validation
+2023-08-19 10:17:15,160:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:17:21,059:INFO:Calculating mean and std
+2023-08-19 10:17:21,060:INFO:Creating metrics dataframe
+2023-08-19 10:17:21,064:INFO:Finalizing model
+2023-08-19 10:17:22,139:INFO:Uploading results into container
+2023-08-19 10:17:22,140:INFO:Uploading model into container now
+2023-08-19 10:17:22,141:INFO:_master_model_container: 100
+2023-08-19 10:17:22,141:INFO:_display_container: 53
+2023-08-19 10:17:22,144:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:17:22,144:INFO:create_model() successfully completed......................................
+2023-08-19 10:17:22,335:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:17:22,341:INFO:_master_model_container: 100
+2023-08-19 10:17:22,342:INFO:_display_container: 53
+2023-08-19 10:17:22,345:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=123,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:17:22,345:INFO:stack_models() successfully completed......................................
+2023-08-19 10:17:26,144:INFO:Initializing stack_models()
+2023-08-19 10:17:26,144:INFO:stack_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator_list=[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), GaussianNB(priors=None, var_smoothing=1e-09)], meta_model=QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001), meta_model_fold=5, fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=precision, fit_kwargs=None, groups=None, probability_threshold=None, verbose=True, return_train_score=False)
+2023-08-19 10:17:26,144:INFO:Checking exceptions
+2023-08-19 10:17:26,160:INFO:Defining meta model
+2023-08-19 10:17:26,173:INFO:Getting model names
+2023-08-19 10:17:26,174:INFO:[('Light Gradient Boosting Machine', LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)), ('Quadratic Discriminant Analysis', QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)), ('Naive Bayes', GaussianNB(priors=None, var_smoothing=1e-09))]
+2023-08-19 10:17:26,176:INFO:SubProcess create_model() called ==================================
+2023-08-19 10:17:26,178:INFO:Initializing create_model()
+2023-08-19 10:17:26,178:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018F1DAC6E00>, estimator=StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018F2471BCA0>, model_only=True, return_train_score=False, kwargs={})
+2023-08-19 10:17:26,178:INFO:Checking exceptions
+2023-08-19 10:17:26,179:INFO:Importing libraries
+2023-08-19 10:17:26,179:INFO:Copying training dataset
+2023-08-19 10:17:26,232:INFO:Defining folds
+2023-08-19 10:17:26,232:INFO:Declaring metric variables
+2023-08-19 10:17:26,235:INFO:Importing untrained model
+2023-08-19 10:17:26,235:INFO:Declaring custom model
+2023-08-19 10:17:26,238:INFO:Stacking Classifier Imported successfully
+2023-08-19 10:17:26,242:INFO:Starting cross validation
+2023-08-19 10:17:26,249:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-08-19 10:17:31,964:INFO:Calculating mean and std
+2023-08-19 10:17:31,965:INFO:Creating metrics dataframe
+2023-08-19 10:17:31,971:INFO:Finalizing model
+2023-08-19 10:17:32,997:INFO:Uploading results into container
+2023-08-19 10:17:32,998:INFO:Uploading model into container now
+2023-08-19 10:17:32,998:INFO:_master_model_container: 101
+2023-08-19 10:17:32,998:INFO:_display_container: 54
+2023-08-19 10:17:33,000:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:17:33,000:INFO:create_model() successfully completed......................................
+2023-08-19 10:17:33,201:INFO:SubProcess create_model() end ==================================
+2023-08-19 10:17:33,209:INFO:_master_model_container: 101
+2023-08-19 10:17:33,209:INFO:_display_container: 54
+2023-08-19 10:17:33,212:INFO:StackingClassifier(cv=5,
+                   estimators=[('Light Gradient Boosting Machine',
+                                LGBMClassifier(boosting_type='gbdt',
+                                               class_weight=None,
+                                               colsample_bytree=1.0,
+                                               importance_type='split',
+                                               learning_rate=0.1, max_depth=-1,
+                                               min_child_samples=20,
+                                               min_child_weight=0.001,
+                                               min_split_gain=0.0,
+                                               n_estimators=100, n_jobs=-1,
+                                               num_leaves=31, objective=None,
+                                               random_state=123, reg_alpha=0.0,
+                                               re...
+                                               subsample_freq=0)),
+                               ('Quadratic Discriminant Analysis',
+                                QuadraticDiscriminantAnalysis(priors=None,
+                                                              reg_param=0.0,
+                                                              store_covariance=False,
+                                                              tol=0.0001)),
+                               ('Naive Bayes',
+                                GaussianNB(priors=None, var_smoothing=1e-09))],
+                   final_estimator=QuadraticDiscriminantAnalysis(priors=None,
+                                                                 reg_param=0.0,
+                                                                 store_covariance=False,
+                                                                 tol=0.0001),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2023-08-19 10:17:33,212:INFO:stack_models() successfully completed......................................
